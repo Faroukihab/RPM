@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-17T18:11:22 EET" name="Default suite" finished-at="2024-12-17T18:16:06 EET" duration-ms="284547">
+    <groups>
+    </groups>
+    <test started-at="2024-12-17T18:11:22 EET" name="Default test" finished-at="2024-12-17T18:16:06 EET" duration-ms="284547">
+      <class name="tests.TestTransferPage">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:11:22 EET" name="startDriver" finished-at="2024-12-17T18:11:29 EET" duration-ms="7650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:11:29 EET" name="userLogin" finished-at="2024-12-17T18:11:36 EET" duration-ms="6764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="validateUsercanAcceptIBT()[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:11:36 EET" name="validateUsercanAcceptIBT" finished-at="2024-12-17T18:12:19 EET" duration-ms="43280" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(), 'Draft')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5932b4773482becab259b15b4d04c836, findElement {using=xpath, value=//span[contains(text(), 'Draft')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\fihab\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62105/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5932b4773482becab259b15b4d04c836]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(), 'Draft')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5932b4773482becab259b15b4d04c836, findElement {using=xpath, value=//span[contains(text(), 'Draft')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\fihab\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62105/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5932b4773482becab259b15b4d04c836
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at tests.TestTransferPage.validateUsercanAcceptIBT(TestTransferPage.java:251)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUsercanAcceptIBT -->
+        <test-method is-config="true" signature="stopDriver(org.testng.ITestResult)[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:12:19 EET" name="stopDriver" finished-at="2024-12-17T18:12:21 EET" duration-ms="1294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUsercanAcceptIBT status=FAILURE method=TestTransferPage.validateUsercanAcceptIBT()[pri:0, instance:tests.TestTransferPage@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:12:21 EET" name="startDriver" finished-at="2024-12-17T18:12:28 EET" duration-ms="7236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:12:28 EET" name="userLogin" finished-at="2024-12-17T18:12:33 EET" duration-ms="5350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="validateUsercanAccepttheOBT()[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:12:33 EET" name="validateUsercanAccepttheOBT" finished-at="2024-12-17T18:13:37 EET" duration-ms="63457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUsercanAccepttheOBT -->
+        <test-method is-config="true" signature="stopDriver(org.testng.ITestResult)[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:13:37 EET" name="stopDriver" finished-at="2024-12-17T18:13:38 EET" duration-ms="824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUsercanAccepttheOBT status=SUCCESS method=TestTransferPage.validateUsercanAccepttheOBT()[pri:0, instance:tests.TestTransferPage@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:13:38 EET" name="startDriver" finished-at="2024-12-17T18:13:44 EET" duration-ms="6492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:13:44 EET" name="userLogin" finished-at="2024-12-17T18:13:49 EET" duration-ms="4797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="validateUsercanEditOBT()[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:13:49 EET" name="validateUsercanEditOBT" finished-at="2024-12-17T18:14:49 EET" duration-ms="60257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUsercanEditOBT -->
+        <test-method is-config="true" signature="stopDriver(org.testng.ITestResult)[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:14:49 EET" name="stopDriver" finished-at="2024-12-17T18:14:50 EET" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUsercanEditOBT status=SUCCESS method=TestTransferPage.validateUsercanEditOBT()[pri:0, instance:tests.TestTransferPage@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:14:50 EET" name="startDriver" finished-at="2024-12-17T18:14:56 EET" duration-ms="6196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:14:56 EET" name="userLogin" finished-at="2024-12-17T18:15:00 EET" duration-ms="4080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="validatetheUsercanRejectOBT()[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:15:00 EET" name="validatetheUsercanRejectOBT" finished-at="2024-12-17T18:16:05 EET" duration-ms="64988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatetheUsercanRejectOBT -->
+        <test-method is-config="true" signature="stopDriver(org.testng.ITestResult)[pri:0, instance:tests.TestTransferPage@8297b3a]" started-at="2024-12-17T18:16:05 EET" name="stopDriver" finished-at="2024-12-17T18:16:06 EET" duration-ms="802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatetheUsercanRejectOBT status=SUCCESS method=TestTransferPage.validatetheUsercanRejectOBT()[pri:0, instance:tests.TestTransferPage@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.TestTransferPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

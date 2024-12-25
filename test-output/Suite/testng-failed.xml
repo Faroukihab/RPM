@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.TestmodelPage">
+        <methods>
+          <include name="startDriver"/>
+          <include name="usercancreatenewmodel"/>
+          <include name="stopDriver"/>
+        </methods>
+      </class> <!-- tests.TestmodelPage -->
+      <class name="tests.TestCategoryPage">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="UserCanCreatanewCategory"/>
+        </methods>
+      </class> <!-- tests.TestCategoryPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
