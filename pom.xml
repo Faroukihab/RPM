@@ -2,60 +2,32 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>seleniumtest</groupId>
-  <artifactId>RPM</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <groupId>com.yourcompany</groupId>
+  <artifactId>your-project</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <maven.compiler.release>17</maven.compiler.release>
+    <maven.compiler.source>23</maven.compiler.source>
+    <maven.compiler.target>23</maven.compiler.target>
+    <maven.compiler.release>23</maven.compiler.release>
   </properties>
 
   <build>
     <plugins>
-      <!-- Maven Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
+        <version>3.8.1</version>
         <configuration>
-          <source>${maven.compiler.source}</source>
-          <target>${maven.compiler.target}</target>
+          <source>23</source>
+          <target>23</target>
           <compilerArgs>
             <arg>--enable-preview</arg>
           </compilerArgs>
         </configuration>
       </plugin>
-
-      <!-- Maven Surefire Plugin -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.3.0</version>
-        <configuration>
-          <argLine>--enable-preview</argLine>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
-
-  <profiles>
-    <!-- Regression Profile -->
-    <profile>
-      <id>regression</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <build>
-        <plugins>
-          <!-- Additional plugin configurations for this profile (if needed) -->
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 
   <dependencies>
     <!-- TestNG Dependency -->
@@ -66,11 +38,50 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Selenium Dependency -->
+    <!-- OpenCSV Dependency -->
+    <dependency>
+      <groupId>com.opencsv</groupId>
+      <artifactId>opencsv</artifactId>
+      <version>5.9</version>
+    </dependency>
+
+    <!-- Apache Commons CSV -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-csv</artifactId>
+      <version>1.11.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Apache POI for Excel Support -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.2.3</version>
+    </dependency>
+
+    <!-- Selenium Java Dependency -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.11.0</version>
+      <version>4.26.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.10.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 </project>

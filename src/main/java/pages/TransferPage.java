@@ -3,12 +3,11 @@ package pages;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-
+import org.testng.Assert;
+import org.openqa.selenium.WebDriver;
 import ProjectLocators.Locators;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -116,8 +115,8 @@ public class TransferPage extends pageBase {
 		locators.serialfield.sendKeys(Keys.ENTER);
 
 		// Add explicit wait to ensure the serial field is filled before clicking the add button
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.attributeToBeNotEmpty(locators.serialfield, "value"));
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		wait.until(ExpectedConditions.attributeToBeNotEmpty(locators.serialfield, "value"));
 
 		scrollToBottom();
 		Thread.sleep(1000);

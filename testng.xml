@@ -9,3 +9,12 @@
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+<!--        <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+<!--<suite name="Regression Suite" verbose="1" parallel="false">-->
+<!--<test name="Test Category Page">-->
+<!--  <classes>-->
+<!--    <class name="tests.TestCategoryPage"/>-->
+<!--  </classes>-->
+<!--</test>-->
+<!--</suite>-->
