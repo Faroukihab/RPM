@@ -4,6 +4,7 @@
     <test thread-count="5" name="Regression Tests">
         <classes>
             <class name="tests.TestTransferPage"/>
+            <class name="tests.TestserialPage"/>
 
         </classes>
     </test> <!-- Test -->
